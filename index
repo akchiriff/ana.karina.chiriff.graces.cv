@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ana Karina Chiriff — Agile Master · Scrum Master · Agile Coach</title>
+<meta name="description" content="CV de Ana Karina Chiriff. Agile Master, Scrum Master y Agile Coach con más de 15 años de experiencia en transformación ágil, gestión de equipos y desarrollo de software. Barcelona, España.">
+<meta name="keywords" content="Agile Master, Scrum Master, Agile Coach, Product Owner, CSM, CSPO, SAFe, Kanban, JIRA, Confluence, Barcelona, transformación ágil">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #FAF7F2;
+    --dark: #1C1C1C;
+    --accent: #C4973A;
+    --accent-light: #E8C97A;
+    --mid: #5A5A5A;
+    --light: #E8E4DC;
+    --white: #FFFFFF;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    font-family: 'Mulish', sans-serif;
+    color: var(--dark);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* ── LAYOUT ── */
+  .page {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+  }
+
+  /* ── HEADER ── */
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 40px;
+    align-items: end;
+    padding: 64px 0 48px;
+    border-bottom: 2px solid var(--dark);
+    animation: fadeDown 0.7s ease both;
+  }
+
+  @keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .header-left h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    color: var(--dark);
+    margin-bottom: 10px;
+  }
+
+  .header-left h1 span {
+    color: var(--accent);
+  }
+
+  .tagline {
+    font-size: 0.88rem;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-bottom: 16px;
+  }
+
+  .location {
+    font-size: 0.9rem;
+    color: var(--mid);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .header-right {
+    text-align: right;
+  }
+
+  .certs-badge {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-end;
+  }
+
+  .badge {
+    background: var(--dark);
+    color: var(--accent-light);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 5px 12px;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+
+  /* ── SUMMARY ── */
+  .summary {
+    padding: 40px 0 36px;
+    border-bottom: 1px solid var(--light);
+    animation: fadeUp 0.6s ease 0.1s both;
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .summary p {
+    font-size: 1.05rem;
+    color: var(--mid);
+    max-width: 780px;
+    line-height: 1.85;
+    font-weight: 300;
+  }
+
+  .summary p strong {
+    color: var(--dark);
+    font-weight: 600;
+  }
+
+  /* ── SECTIONS ── */
+  .section {
+    padding: 44px 0 0;
+    animation: fadeUp 0.6s ease 0.15s both;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .section-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--light);
+  }
+
+  /* ── EXPERIENCE ── */
+  .exp-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .exp-item {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 0 32px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--light);
+    transition: background 0.2s;
+  }
+
+  .exp-item:last-child { border-bottom: none; }
+
+  .exp-meta {
+    padding-top: 3px;
+  }
+
+  .exp-date {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+
+  .exp-company {
+    font-size: 0.82rem;
+    color: var(--mid);
+    font-weight: 400;
+  }
+
+  .exp-location {
+    font-size: 0.75rem;
+    color: #aaa;
+    margin-top: 2px;
+  }
+
+  .exp-role {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 8px;
+  }
+
+  .exp-desc {
+    font-size: 0.88rem;
+    color: var(--mid);
+    line-height: 1.75;
+    margin-bottom: 10px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+  }
+
+  .tag {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 3px 10px;
+    border: 1px solid var(--light);
+    border-radius: 2px;
+    color: var(--mid);
+    background: var(--white);
+  }
+
+  /* ── TWO COLUMN ── */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+  }
+
+  /* ── EDUCATION ── */
+  .edu-item {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--light);
+  }
+  .edu-item:last-child { border-bottom: none; }
+
+  .edu-school {
+    font-weight: 600;
+    font-size: 0.92rem;
+    color: var(--dark);
+    margin-bottom: 2px;
+  }
+
+  .edu-degree {
+    font-size: 0.84rem;
+    color: var(--mid);
+  }
+
+  .edu-year {
+    font-size: 0.75rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin-top: 2px;
+  }
+
+  /* ── SKILLS ── */
+  .skills-group {
+    margin-bottom: 20px;
+  }
+
+  .skills-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .skill-pill {
+    font-size: 0.78rem;
+    font-weight: 500;
+    padding: 4px 12px;
+    background: var(--white);
+    border: 1px solid var(--light);
+    border-radius: 20px;
+    color: var(--dark);
+  }
+
+  /* ── CERTS ── */
+  .cert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cert-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 16px;
+    background: var(--white);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+  }
+
+  .cert-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    margin-top: 6px;
+    flex-shrink: 0;
+  }
+
+  .cert-name {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--dark);
+  }
+
+  .cert-issuer {
+    font-size: 0.75rem;
+    color: var(--mid);
+  }
+
+  /* ── LANGUAGES ── */
+  .lang-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--light);
+  }
+
+  .lang-name { font-weight: 600; font-size: 0.9rem; }
+  .lang-level {
+    font-size: 0.78rem;
+    color: var(--accent);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    margin-top: 60px;
+    padding-top: 28px;
+    border-top: 2px solid var(--dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.78rem;
+    color: var(--mid);
+  }
+
+  footer a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 680px) {
+    header { grid-template-columns: 1fr; }
+    .header-right { text-align: left; }
+    .certs-badge { align-items: flex-start; }
+    .exp-item { grid-template-columns: 1fr; gap: 4px; }
+    .exp-meta { padding-bottom: 6px; }
+    .two-col { grid-template-columns: 1fr; gap: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-left">
+      <div class="tagline">Agile Master · Scrum Master · Agile Coach</div>
+      <h1>Ana Karina<br><span>Chiriff</span> Gracés</h1>
+      <div class="location">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Barcelona, Cataluña, España &nbsp;·&nbsp; 
+        <a href="https://www.linkedin.com/in/anakarinachiriff/" style="color:var(--accent); text-decoration:none; font-weight:600;">LinkedIn</a>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="certs-badge">
+        <span class="badge">CSM® · CSD® · CSPO®</span>
+        <span class="badge">ATF® · SMPC® · SFPC</span>
+        <span class="badge">SAFe® 5 Agilist · RWVCPC</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- SUMMARY -->
+  <div class="summary">
+    <p>
+      Profesional con más de <strong>15 años de trayectoria</strong> en tecnología y metodologías ágiles, 
+      con una carrera que arrancó en el desarrollo de software y fue evolucionando naturalmente hacia 
+      la <strong>gestión de equipos y la transformación ágil</strong>. He trabajado en sectores tan distintos 
+      como la banca, la investigación científica, el agro y la aviación, lo que me dio una visión muy 
+      amplia de cómo los equipos funcionan —y cómo pueden funcionar mejor. Me mueve facilitar entornos 
+      donde los equipos puedan dar lo mejor de sí mismos, con foco en la <strong>mejora continua, 
+      la colaboración y la entrega de valor real</strong>.
+    </p>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Experiencia</div>
+    <div class="exp-grid">
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-date">Oct 2021 — Actualidad</div>
+          <div class="exp-company">Kenos Technology</div>
+          <div class="exp-location">Barcelona · Híbrido</div>
+        </div>
+        <div>
+          <div class="exp-role">Agile Master — Vueling</div>
+          <div class="exp-desc">
+            Facilitación de equipos de desarrollo en contexto aeronáutico, acompañando a múltiples squads 
+            en su madurez ágil. Gestión de sprints, retrospectivas y dinámicas de mejora continua. 
+            Coordinación entre equipos técnicos y negocio para la entrega de valor sostenida. 
+            Trabajo cercano con Product Owners y stakeholders para alinear prioridades y reducir impedimentos.
+          </div>
+          <div class="tags">
+            <span class="tag">Scrum</span><span class="tag">JIRA</span><span class="tag">Confluence</span>
+            <span class="tag">Gestión de equipos</span><span class="tag">Mejora continua</span><span class="tag">Sprint</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-date">Mar 2020 — Oct 2021</div>
+          <div class="exp-company">Independiente</div>
+          <div class="exp-location">Barcelona</div>
+        </div>
+        <div>
+          <div class="exp-role">Freelance Software Engineer</div>
+          <div class="exp-desc">
+            Desarrollo de páginas web para clientes en LATAM, combinando trabajo técnico con 
+            acompañamiento ágil en los proyectos. Gestión autónoma del ciclo completo de entrega, 
+            desde el levantamiento de requisitos hasta el despliegue.
+          </div>
+          <div class="tags">
+            <span class="tag">Desarrollo web</span><span class="tag">Agilidad</span><span class="tag">LATAM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-date">Jul 2020 — Sep 2020</div>
+          <div class="exp-company">Bimetica Parametric Design Services</div>
+          <div class="exp-location">Hospitalet de Llobregat</div>
+        </div>
+        <div>
+          <div class="exp-role">Desarrolladora Web</div>
+          <div class="exp-desc">
+            Mantenimiento de la página institucional y desarrollo de nuevos módulos. 
+            Trabajo con HTML, CSS, Bootstrap, MySQL y PHP en un entorno colaborativo.
+          </div>
+          <div class="tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Bootstrap</span>
+            <span class="tag">MySQL</span><span class="tag">PHP</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-date">Sep 2019 — Mar 2020</div>
+          <div class="exp-company">Banco Hipotecario</div>
+          <div class="exp-location">Buenos Aires, Argentina</div>
+        </div>
+        <div>
+          <div class="exp-role">Scrum Master</div>
+          <div class="exp-desc">
+            Facilitación de equipos en el contexto bancario argentino. Implementación y consolidación 
+            de prácticas ágiles en squads multidisciplinares, trabajando en paralelo con marcos 
+            Waterfall en proyectos de transición.
+          </div>
+          <div class="tags">
+            <span class="tag">Scrum</span><span class="tag">Agile</span><span class="tag">Waterfall</span><span class="tag">Banca</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-date">Ene 2019 — Sep 2019</div>
+          <div class="exp-company">Monsanto Company</div>
+          <div class="exp-location">Buenos Aires, Argentina</div>
+        </div>
+        <div>
+          <div class="exp-role">Scrum Master / Agile Coach</div>
+          <div class="exp-desc">
+            Coaching ágil a equipos de tecnología en una compañía global del sector agropecuario. 
+            Facilitación de ceremonias, acompañamiento en la adopción de prácticas Scrum y apoyo 
+            en la gestión del cambio cultural hacia la agilidad.
+          </div>
+          <div class="tags">
+            <span class="tag">Agile Coach</span><span class="tag">JIRA</span><span class="tag">Confluence</span><span class="tag">Inglés</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-date">Abr 2015 — Sep 2019</div>
+          <div class="exp-company">Huenei IT Services</div>
+          <div class="exp-location">ICBC Argentina / Monsanto</div>
+        </div>
+        <div>
+          <div class="exp-role">Software Developer</div>
+          <div class="exp-desc">
+            Desarrollo de software en proyectos para clientes de gran envergadura como ICBC Argentina 
+            y Monsanto. Trabajo en equipo con uso de JIRA para gestión de tareas y seguimiento de proyectos.
+          </div>
+          <div class="tags">
+            <span class="tag">Java</span><span class="tag">JIRA</span><span class="tag">Software Development</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-date">Abr 2015 — Dic 2018</div>
+          <div class="exp-company">ICBC Argentina</div>
+          <div class="exp-location">Buenos Aires, Argentina</div>
+        </div>
+        <div>
+          <div class="exp-role">Gestor de Proyecto · Scrum Master · Analista Funcional</div>
+          <div class="exp-desc">
+            Trayectoria progresiva dentro del banco: comenzando como Analista Programadora, 
+            avanzando hacia la gestión funcional y finalmente liderando proyectos como Scrum Master 
+            y Gestora de Proyecto. Implementación de metodologías ágiles en un entorno bancario regulado, 
+            gestionando equipos y coordinando entregas con múltiples áreas del negocio.
+          </div>
+          <div class="tags">
+            <span class="tag">Scrum</span><span class="tag">Kanban</span><span class="tag">Banca</span>
+            <span class="tag">Agile</span><span class="tag">Waterfall</span><span class="tag">Gestión de proyecto</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-meta">
+          <div class="exp-date">Jul 2010 — Abr 2015</div>
+          <div class="exp-company">CONICET</div>
+          <div class="exp-location">Buenos Aires, Argentina</div>
+        </div>
+        <div>
+          <div class="exp-role">Consultor Experto / J2EE Developer</div>
+          <div class="exp-desc">
+            Casi 10 años en el Consejo Nacional de Investigaciones Científicas y Técnicas de Argentina. 
+            Desarrollo de aplicaciones Java EE para la gestión de proyectos científicos, y posteriormente 
+            como Consultor Experto aplicando Scrum en contextos de investigación. Una experiencia que 
+            cultivó el pensamiento analítico y la capacidad de trabajar con equipos altamente especializados.
+          </div>
+          <div class="tags">
+            <span class="tag">Java</span><span class="tag">J2EE</span><span class="tag">Scrum</span>
+            <span class="tag">Investigación</span><span class="tag">OOP</span><span class="tag">UML</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- EDUCATION + LANGUAGES -->
+  <div class="two-col section">
+    <div>
+      <div class="section-title">Educación</div>
+      <div class="edu-item">
+        <div class="edu-school">CIPSA Escuela Superior Informática Profesional</div>
+        <div class="edu-degree">Máster en Programación Web</div>
+        <div class="edu-year">2020 – 2021</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-school">Universidad CAECE</div>
+        <div class="edu-degree">Licenciada en Sistemas (Computer Science)</div>
+        <div class="edu-year">2009 – 2013</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-school">Universidad de Buenos Aires (UBA)</div>
+        <div class="edu-degree">Ingeniería</div>
+        <div class="edu-year">2000 – 2006</div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-school">I.M.E</div>
+        <div class="edu-degree">Perito Mercantil</div>
+        <div class="edu-year">1995 – 1999</div>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-title">Idiomas</div>
+      <div class="lang-row">
+        <span class="lang-name">Español</span>
+        <span class="lang-level">Nativo</span>
+      </div>
+      <div class="lang-row">
+        <span class="lang-name">Inglés</span>
+        <span class="lang-level">Profesional</span>
+      </div>
+
+      <div style="margin-top: 36px;">
+        <div class="section-title" style="font-size:1rem;">GitHub</div>
+        <a href="https://akchiriff.github.io" style="color:var(--accent); font-size:0.88rem; font-weight:600; text-decoration:none;">
+          akchiriff.github.io
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Aptitudes</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px;">
+      <div class="skills-group">
+        <div class="skills-label">Metodologías</div>
+        <div class="skills-list">
+          <span class="skill-pill">Scrum</span>
+          <span class="skill-pill">Kanban</span>
+          <span class="skill-pill">SAFe</span>
+          <span class="skill-pill">Waterfall</span>
+          <span class="skill-pill">Design Thinking</span>
+          <span class="skill-pill">Agile Project Management</span>
+        </div>
+      </div>
+      <div class="skills-group">
+        <div class="skills-label">Herramientas</div>
+        <div class="skills-list">
+          <span class="skill-pill">JIRA</span>
+          <span class="skill-pill">Confluence</span>
+          <span class="skill-pill">GitHub</span>
+          <span class="skill-pill">VS Code</span>
+          <span class="skill-pill">Excel / Power Query</span>
+        </div>
+      </div>
+      <div class="skills-group">
+        <div class="skills-label">Liderazgo</div>
+        <div class="skills-list">
+          <span class="skill-pill">Agile Coaching</span>
+          <span class="skill-pill">Team Leadership</span>
+          <span class="skill-pill">Mejora continua</span>
+          <span class="skill-pill">Facilitación</span>
+          <span class="skill-pill">Gestión del cambio</span>
+        </div>
+      </div>
+      <div class="skills-group">
+        <div class="skills-label">Tecnología</div>
+        <div class="skills-list">
+          <span class="skill-pill">Java / J2EE</span>
+          <span class="skill-pill">HTML · CSS</span>
+          <span class="skill-pill">SQL</span>
+          <span class="skill-pill">OOP</span>
+          <span class="skill-pill">Microservicios</span>
+          <span class="skill-pill">BI</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section">
+    <div class="section-title">Certificaciones destacadas</div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 10px;">
+      <div class="cert-item">
+        <div class="cert-dot"></div>
+        <div>
+          <div class="cert-name">Certified SAFe® 5 Agilist</div>
+          <div class="cert-issuer">Scaled Agile, Inc. · Jun 2022</div>
+        </div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-dot"></div>
+        <div>
+          <div class="cert-name">Certified Scrum Master (CSM®)</div>
+          <div class="cert-issuer">Scrum Alliance</div>
+        </div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-dot"></div>
+        <div>
+          <div class="cert-name">Certified Product Owner (CSPO®)</div>
+          <div class="cert-issuer">Scrum Alliance · Sept 2018</div>
+        </div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-dot"></div>
+        <div>
+          <div class="cert-name">Certified Scrum Developer (CSD®)</div>
+          <div class="cert-issuer">Scrum Alliance</div>
+        </div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-dot"></div>
+        <div>
+          <div class="cert-name">Agile Team Facilitator (ATF®)</div>
+          <div class="cert-issuer">Kleer | Agile Coaching & Training</div>
+        </div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-dot"></div>
+        <div>
+          <div class="cert-name">Scrum Master Professional Certificate (SMPC®)</div>
+          <div class="cert-issuer">CertiProf · Abr 2021</div>
+        </div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-dot"></div>
+        <div>
+          <div class="cert-name">Scrum Foundations Professional Certificate (SFPC)</div>
+          <div class="cert-issuer">CertiProf · Abr 2021</div>
+        </div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-dot"></div>
+        <div>
+          <div class="cert-name">Remote Work & Virtual Collaboration (RWVCPC)</div>
+          <div class="cert-issuer">CertiProf · Abr 2021</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>Ana Karina Chiriff Gracés · Barcelona, España</span>
+    <a href="https://www.linkedin.com/in/anakarinachiriff/">linkedin.com/in/anakarinachiriff</a>
+  </footer>
+
+</div>
+</body>
+</html>
