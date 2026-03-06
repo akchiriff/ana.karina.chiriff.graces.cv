@@ -4,7 +4,7 @@
 
 Hola 👋 Bienvenido/a al repositorio de mi CV personal, hosteado con GitHub Pages porque sí, los Agile Masters también tenemos repositorios.
 
-🔗 **[Ver CV en vivo →]([https://akchiriff.github.io/ana.karina.chiriff.graces.cv])**
+🔗 **[Ver CV en vivo →]([https://akchiriff.github.io/ana.karina.chiriff.graces.cv/])**
 
 ---
 
