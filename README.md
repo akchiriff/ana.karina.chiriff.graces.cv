@@ -10,7 +10,7 @@ Hola 👋 Bienvenido/a al repositorio de mi CV personal, hosteado con GitHub Pag
 
 ## 🙋‍♀️ ¿Quién soy?
 
-Soy **Ana Karina**, Agile Master, Scrum Master y Agile Coach con más de 15 años moviéndome entre el código, los equipos y las pizarras llenas de post-its.
+Soy **Ana Karina**, Agile Master, Scrum Master y Agile Coach con más de 20 años moviéndome entre el código, los equipos y las pizarras llenas de post-its.
 
 Empecé escribiendo Java en CONICET (sí, investigación científica 🔬), pasé por bancos, multinacionales agrícolas y aerolíneas, y en cada parada aprendí que **la tecnología sin las personas no llega a ningún lado**.
 
